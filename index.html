@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2>@Nurahamed</h2>
@@ -17,24 +18,24 @@
 
     <h2>@cointainer</h2>
     <h3>fluid container</h3>
-    <div> This is and fluid container and it will go till end of the page</div>
+    <div class=" container container-fluid"> This is and fluid container and it will go till end of the page</div>
 
 
     <h3>center container</h3>
-    <div>This will acentered container and this will go till the specified width</div>
+    <div class="container container-center">This will acentered container and this will go till the specified width</div>
 
     <hr>
 
     <h2>@Links</h2>
-    <a href="/">Primary Link</a> 
-    <a href="/">Secondery Link</a>
+    <a class="link-primary" href="/">Primary Link</a> 
+    <a class="link-secondery" href="/">Secondery Link</a>
 
     <hr>
 
     <h2>List</h2>
     <h3>Unorderd List</h3>
-
-    <ul>
+    <p>This list will not have bullet</p>
+    <ul class="list-non-bullet">
         <li>Item one</li>
         <li>Item Two</li>
         <li>Item Three</li>
@@ -43,18 +44,18 @@
 
     <h3>Unorderd inline list</h3>
 
-    <ul>
-        <li>Inline item one</li>
-        <li>Inline item Two</li>
-        <li>Inline item Three</li>
-        <li>Inline item Four</li>
+    <ul class="list-non-bullet" >
+        <li  class="list-item-inline">Inline item one</li>
+        <li class="list-item-inline">Inline item Two</li>
+        <li class="list-item-inline">Inline item Three</li>
+        
     </ul>
 
 
 
     <h3>Reversed Ordered List</h3>
 
-    <ol>
+    <ol reversed>
         <li>Mango</li>
         <li>Orenge</li>
         <li>Apple</li>
@@ -63,8 +64,50 @@
 
     <hr>
 
-    <h2>@nav</h2>
+    <h2 >@nav</h2>
+   <nav class="navigation container">
+        <div class="nav-brand"> I am webdeveloper</div>
+        <ul class="list-non-bullet nav-pills" >
+            <li  class="list-item-inline"> <a  class="link link-active" href="/">Home</a></li>
+            <li class="list-item-inline"> <a  class="link"href="/">work</a></li>
+            <li class="list-item-inline"> <a class="link" href="/">About</a></li>
+        </ul>
+    </nav>  
 
+    <hr>
+
+    <h2>Header</h2>
+    <header class="hero">
+        <img class="hero-img" src="images/cover1.svg" alt="">
+        <h1 class="hero-heading">Nur Ahamed the <span class="heading-inverted">webdeveloper</span> </h1>
+    </header>
+
+    <hr>
+
+    <h2>Section</h2>
+
+    <section class="section">
+        <h3>White section</h3>
+        <p> This will have white background</p>
+    </section>
+    <section class="section">
+        <h3>Off White section</h3>
+        <p> This will have off white background</p>
+    </section>
+
+    <hr>
+
+    <h2>@footer</h2>
+
+    <footer>
+        <div>Some small text inside  footer</div>
+        <ul>
+            <li> fcebook</li>
+            <li> likndind</li>
+            <li> twitter</li>
+        </ul>
+    </footer>
+        
 
 </body>
 </html>
