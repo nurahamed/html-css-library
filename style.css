@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
+
+
 :root{
     --primary-color: #10A19F ;
     --dark-gray: #E9E8E8;
+    --button-color: #3f3d56;
 }
 
 /* #BCEAD5 */
@@ -10,6 +16,10 @@ body{
     font-family: 'Montserrat', sans-serif;
     text-decoration-color: #3f3d56;
     margin: 0px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .container{
@@ -29,97 +39,6 @@ body{
     max-width: auto;
 
 }
-
-
-.link{
-    text-decoration: none;
-    /* color: white; */
-    padding: 0.5rem 1rem;
-   
-}
-
- /* links */
-.link-primary{
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-   
- background-color: var(--primary-color);
- border-radius: 0.5rem;
- color: whitesmoke;
- margin: 1rem 1em;
-}
-.link-secondery{
- text-decoration: none;
- padding: 0.5rem 1rem;
- color: black;
- border-radius: 0.5rem;
- border: 1px solid var(--primary-color);
-}
-
-hr{
-    margin: 2rem;
-}
-.list-non-bullet{
-    list-style: none;
-
-}
-.list-item-inline{
- display: inline;
- padding: 0rem 0.5rem;
-}
-a{
-    text-decoration: none;
-}
-/* navigation */
-
-.navigation{
-     background-color: var(--primary-color);
-     color: white;
-     padding: 1rem;
-     border-bottom-left-radius: 1rem;
-
-}
-.navigation .nav-brand{
-    font-weight: bold;
-    /* font-size: 1.1rem ; */
-}
-.navigation .nav-pills{
-    text-align: right;
-}
-.navigation .link{
-    color: white;
-    
-}
-
-.naviagation .link-active{
-    font-weight: bold;
-
-}
-.hero .hero-img{
-    max-width: 400px;
-    display: block;
-    margin: auto;
-
-}
-.hero-heading{
-color: var(--dark-gray);
-font-size: 2rem;
-text-align: center;
-}
-
-.hero .hero-heading .heading-inverted{
-    color: var(--primary-color);
-}
-
-.section{
-    padding: 3rem;
-}
-
-.section-one{
-    background-color: var(--dark-gray);
-    border-radius: 1rem;
-}
-
 /* footer */
 .footer{
     background-color: var(--primary-color);
@@ -127,6 +46,7 @@ text-align: center;
     text-align: center;
     border-top-right-radius: 1rem;
     color: white;
+    margin-top: 6rem;
 
 }
 .footer-header{
@@ -137,4 +57,150 @@ text-align: center;
     padding: 1rem 0rem 0rem 0rem;
     margin-bottom: 0rem;
     color: white;
+}
+
+.footer-links:hover{
+    color: var(--button-color);
+}
+
+
+hr{
+    margin: 5rem;
+}
+.my-name{
+    margin: 50px 0px 0px 0px ;
+    font-family: 'Sacramento', cursive;
+    font-family: "Sacramento";
+    font-size: 3.7rem;
+    text-align: center;
+    color: var(--button-color);
+    
+}
+
+.h1-project{
+    margin: 5rem 1rem;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hero .hero-img{
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    margin-top: 3.5rem;
+    margin-bottom: 0.5rem; ;
+
+}
+/* .hero-heading{
+color: var(--button-color);
+font-size: 3.7rem;
+text-align: center;
+margin-top: 0rem;
+} */
+
+/* .hero .hero-heading  */
+.heading-inverted{
+    color: var(--primary-color);
+    padding-top: 0rem;
+    margin-top: 0rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.heading-inverted:hover{
+    color: var(--button-color);
+}
+
+/* links */
+.link{
+    text-decoration: none;
+    /* color: white; */
+    padding: 0.5rem 1rem;
+}
+
+ 
+ 
+.link-primary{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+   
+ background-color: var(--primary-color);
+ border-radius: 1rem;
+ color: whitesmoke;
+ margin: 1rem 1em;
+}
+.link-primary:hover {
+    background-color: var(--button-color);
+}
+
+.link-secondery{
+ text-decoration: none;
+ padding: 0.5rem 1rem;
+ color: black;
+ border-radius: 1rem;
+ border: 1px solid var(--primary-color);
+}
+.link-secondery:hover {
+    background-color: var(--button-color);
+    color: white;
+}
+
+
+.list-non-bullet{
+    list-style: none;
+
+}
+.list-item-inline{
+ display: inline;
+ padding: 0rem 0.5rem;
+}
+
+
+
+/* navigation */
+
+
+
+.navigation{
+     background-color: var(--primary-color);
+     color: white;
+     padding: 0.1rem;
+     border-bottom-left-radius: 1rem;
+
+}
+.navigation .nav-brand{
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-top: 0.6rem;
+    /* font-size: 1.1rem ; */
+}
+.navigation .nav-pills{
+    text-align: right;
+}
+.navigation .link{
+    color: white;
+    
+}
+.navigation .link:hover {
+    color: var(--button-color);
+}
+
+.naviagation .link-active{
+    font-weight: bold;
+
+}
+
+.section{
+    margin: 0px 3rem;
+    padding: 3rem;
+}
+
+.section-one{
+    background-color: var(--dark-gray);
+    border-radius: 1rem;
+}
+
+.section-project{
+    margin-top: 2rem;
 }
