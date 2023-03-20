@@ -9,6 +9,7 @@
     --primary-color: #10A19F ;
     --dark-gray: #E9E8E8;
     --button-color: #3f3d56;
+    --purple-color: #7c3aed;
 }
 
 /* #BCEAD5 */
@@ -222,3 +223,42 @@ margin-top: 0rem;
     margin-left: 2rem;
     padding: 0px 0px;
 }
+
+/* bmi calculator */
+.bmi-back{
+
+}
+.bmi-hero{
+    color: var(--purple-color);
+    margin-top: 3rem;
+}
+
+.text{
+    padding: 0px;
+    margin-bottom: 1px;
+}
+#btn{
+    font-size: inherit;
+    font-size: large;
+    margin-top: 10px;
+    border: none;
+    color: var(--button-color);
+    background-color: var(--purple-color);
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+#btn:hover{
+color: white;
+background-color: var(--button-color);
+box-shadow: 1px 1px 10px #341f97;
+}
+.info-color{
+    color: var(--purple-color);
+}
+.bold{
+    font-weight: bold;
+}
+/* bmi calculator */

@@ -9,9 +9,34 @@
     <!-- component css style  -->
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-    <h1 class="hero h1-project"> Welcome to BMI Calculator</h1>
+<body class="bmi-back" background="/calculator/images/bmiw.svg">
 
+    <section class="section  bmi-hero">
+        
+        <div class="container container-center">
+            <h1 class="bmi-hero"> Welcome to BMI Calculator</h1>
+
+        <p class="info-color" id="info"> Please enter the height <span class="bold">[cm] </span> and weight <span class="bold">[kg]</span></p>
+       <p class="text">Height</p>
+       <input type="text" id="height">
+       <p class="text">Weight</p>
+       <input type="text" id="weight">
+       <p id="result"></p>
+       <button id="btn" onClick="bmi()">Calculate</button>
+       
+        </div>
+    </section>
     
+    <script>
+    function bmi(){
+        var h = document.getElementById('height').value;
+        var w = document.getElementById('weight').value;
+        var bmi = w/(h/100 * h/100);
+        var total = bmi.toFixed(2);
+        document.getElementById('result').innerHTML = "Your BMI is "+total
+     }
+     </script>
+
+
 </body>
 </html>
