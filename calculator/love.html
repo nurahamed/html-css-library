@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Love Calculator</title>
 </head>
 <body>
     
+    <body class="bmi-back" background="/calculator/images/love.svg">
+
+        <section class="section  bmi-hero">
+            
+            <div class="container container-center">
+                <h1 class="love-hero"> Welcome to Love Calculator</h1>
+    
+            <!-- <p class="info-color" id="info"> Please enter the height <span class="bold">[cm] </span> and weight <span class="bold">[kg]</span></p> -->
+
+           <p class="love-text">Your Name</p>
+           <input type="text" id="height">
+           <p class="love-text">Her Name</p>
+           <input type="text" id="weight">
+           <p class="love-text" id="result"></p>
+           <button id="love-btn" onClick="love()">Calculate</button>
+           
+            </div>
+        </section>
+
+
+        <script>
+        function love(){
+            var n =Math.random();
+            var m = Math.floor(n*100);
+            if ( m >= 70) {
+                document.getElementById('result').innerHTML = "Your Love Score is "+m;
+            } else if ( m >=50 || m<=70) {
+               document.getElementById('result').innerHTML = "Your Love Score is "+m;
+            }
+            else{
+                document.getElementById('result').innerHTML = "Your Love Score is "+m;
+
+            }
+           
+  
+         }
+
+         </script>
+
+
 </body>
 </html>
