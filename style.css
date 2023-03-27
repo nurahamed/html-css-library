@@ -46,6 +46,17 @@ a{
 hr{
     margin: 5rem;
 }
+
+hr{
+    margin-top: 70px;;
+    margin-left: 46%;
+    border-style: none;
+    border-top-style: dotted;
+    border-color: grey;
+    border-width: 5px;
+    width: 8%;
+    }
+    
 .my-name{
     margin: 50px 0px 0px 0px ;
     font-family: 'Sacramento', cursive;
