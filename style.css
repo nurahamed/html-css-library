@@ -11,6 +11,9 @@
     --button-color: #3f3d56;
     --purple-color: #7c3aed;
     --red-love: #F50057;
+    --section:#CBE4DE ; 
+     /* #93BFCF ; */
+    
 }
 
 /* #BCEAD5 */
@@ -48,11 +51,11 @@ hr{
 }
 
 hr{
-    margin-top: 70px;;
+    margin: 40px 0px;;
     margin-left: 46%;
     border-style: none;
     border-top-style: dotted;
-    border-color: grey;
+    border-color: var(--primary-color);
     border-width: 5px;
     width: 8%;
     }
@@ -185,8 +188,10 @@ margin-top: 0rem;
 }
 
 .section{
+    border-radius:1rem ;
     margin: 0px 3rem;
     padding: 3rem;
+    background-color: var(--section);
 }
 
 .section-one{
