@@ -293,4 +293,10 @@ color: white;
 background-color: var(--button-color);
 box-shadow: 1px 1px 10px #341f97;
 }
+.love-text{
+    text-align: center;
+}
+.love-box{
+    padding: 1.5rem 1rem;
+}
 /* love Calculator */
