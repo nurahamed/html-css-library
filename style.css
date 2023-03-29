@@ -67,6 +67,7 @@ hr{
     font-size: 3.7rem;
     text-align: center;
     color: var(--button-color);
+    display: inline-block;
     
 }
 
