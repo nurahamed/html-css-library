@@ -118,13 +118,13 @@ margin-top: 0rem;
  
  
 .link-primary{
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-   
- background-color: var(--primary-color);
+text-decoration: none;
+padding: 0.5rem 1rem;
+background-color: var(--primary-color);
  border-radius: 1rem;
  color: whitesmoke;
- margin: 1rem 1em;
+ margin: 0.5rem 0rem;
+ display: inline-block;
 }
 .link-primary:hover {
     background-color: var(--button-color);
