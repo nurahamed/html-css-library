@@ -128,6 +128,7 @@ margin-top: 0rem;
 }
 .link-primary:hover {
     background-color: var(--button-color);
+    -ms-text-justify: auto;
 }
 
 .link-secondery{
@@ -136,10 +137,13 @@ margin-top: 0rem;
  color: black;
  border-radius: 1rem;
  border: 1px solid var(--primary-color);
+ display: inline-block;
+ margin-top: 20px;
 }
 .link-secondery:hover {
     background-color: var(--button-color);
     color: white;
+    display: inline-block;
 }
 
 
