@@ -126,7 +126,7 @@ margin-top: 0rem;
 }
 .link-primary:hover {
   background-color: var(--button-color);
-  /* -ms-text-justify: auto; */
+  -ms-text-justify: auto;
 }
 
 .link-secondery {
