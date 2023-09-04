@@ -28,8 +28,8 @@
             When navigating the vast landscape of the World Wide Web, encountering error messages is almost Unavoidable. These error messages, conveyed through HTTP status codes, offer valuable insights into what's happening behind the scenes. Here's a brief overview of some common HTTP error status codes: 
         </p> 
             
-            <h4>You've probably seen it before: 404 Page Not Found.</h4> 
-              404? What's that? <br>
+            <h4>You've probably seen it before: <span class= "err">404</span>  Page Not Found.</h4> 
+              <span class= "err">404? What's that?</span> <br>
               <p class=""> 
                 It's an HTTP status code. <br>
                 There are a surprising number of HTTP status codes  aside from the two or three you may have run into in the wild. They exist to represent the status of requests that browsers make to load websites, and they're split into five groups. 
@@ -46,13 +46,7 @@
             <p class="">
                 You can see these codes in action if by using developer tools. With Chrome, just press F12 (on Windows) or ⌥⌘I (on macOS), then select network at the top, and reload the page you're on.We'll be highlighting some well-known and a few not-so-well-known codes.
             </p> 
-            <h4> 1XX Codes</h4>
-            <p class=""> 
-                An informational response lets the browser know that the request to load a website or document was received and understood. Codes like these are issued while the request processing continues on the server, and it lets the browser know that it should wait for a final response. 
-            </p>
-               <h5>100 — Continue</h5>
-            <p class="">A status code of 100 indicates that (usually the first) part of a request has been received without any problems, and that the     rest of the request should now be sent.
-            </p>
+           
             <h4> 1XX Codes</h4>
             <p class=""> 
                 An informational response lets the browser know that the request to load a website or document was received and understood. Codes like these are issued while the request processing continues on the server, and it lets the browser know that it should wait for a final response. 
@@ -101,7 +95,7 @@
 
             <h4>4XX Codes</h4>
             <p class=""> 
-                This type of status code is intended for situations in which an error seems to have been caused by the browser or user, like the infamous 404 error.
+                This type of status code is intended for situations in which an error seems to have been caused by the browser or user, like the infamous <span class= "err">404 </span>error.
             </p>
             <h5>400 — Bad Request</h5>
             <p class="">A status code of 400 indicates that the server did not understand the request due to bad syntax.
@@ -115,14 +109,14 @@
             <h5>403 — Forbidden</h5>
             <p class="">A 403 status code indicates that the client cannot access the requested resource. That might mean that the wrong username and password were sent in the request, or that the permissions on the server do not allow what was being asked.
             </p>
-            <h5>404 — Not Found</h5>
-            <p class="">The best known of them all, the 404 status code indicates that the requested resource was not found at the URL given, and the server has no idea how long for.
+            <h5><span class= "err">404 — Not Found</span></h5>
+            <p class="">The best known of them all, thes <span class= "err">404 status</span> code indicates that the requested resource was not found at the URL given, and the server has no idea how long for.
             </p>
             <h5>408 — Request Timeout</h5>
             <p class="">A 408 status code means that the client did not produce a request quickly enough. A server is set to only wait a certain amount of time for responses from clients, and a 408 status code indicates that time has passed.
             </p>
             <h5>410 — Gone</h5>
-            <p class="">A 410 status code is the 404's lesser known cousin. It indicates that a resource has permanently gone (a 404 status code gives no indication if a resource has gone permanently or temporarily), and no new address is known for it.
+            <p class="">A 410 status code is the 404's lesser known cousin. It indicates that a resource has permanently gone (a <span class= "err">404</span> status code gives no indication if a resource has gone permanently or temporarily), and no new address is known for it.
             </p>
             <h5>415 — Unsupported Media Type</h5>
             <p class="">A 415 status code is returned by a server to indicate that part of the request was in an unsupported format.
