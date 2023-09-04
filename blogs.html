@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="\style.css">
 </head>
 <body>
-    <nav class="navigation container">
+    <nav class="topBar " id="fixed-top">
         <div class="nav-brand">Nur Ahamed</div>
         <ul class="list-non-bullet nav-pills" >
             <li  class="list-item-inline"> <a  class="link link-active" href="/">Home</a></li>
@@ -20,14 +20,137 @@
 
     <h1 class="h1-project">Read my blogs</h1>    
 
-    <section class="section">
-        <div class="container container-center">
-        <h3>dummy blog one</h3>
-        <p> The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.
+    <div class="blog container-fluid">
+        
+        <h3>Title: Understanding HTTP Error Status Codes: A Comprehensive Guide</h3>
+       
+         <p class="">
+            When navigating the vast landscape of the World Wide Web, encountering error messages is almost Unavoidable. These error messages, conveyed through HTTP status codes, offer valuable insights into what's happening behind the scenes. Here's a brief overview of some common HTTP error status codes: 
+        </p> 
+            
+            <h4>You've probably seen it before: 404 Page Not Found.</h4> 
+              404? What's that? <br>
+              <p class=""> 
+                It's an HTTP status code. <br>
+                There are a surprising number of HTTP status codes  aside from the two or three you may have run into in the wild. They exist to represent the status of requests that browsers make to load websites, and they're split into five groups. 
+            </p>
+          
+            <ul>
+                <li>1XX — Informational Responses</li>
+                <li>2XX — Success Responses</li>
+                <li>3XX — Redirection Responses</li>
+                <li>4XX — Client Error Responses</li>
+                <li>5XX — Server Error Responses</li>
+            </ul>
+          
+            <p class="">
+                You can see these codes in action if by using developer tools. With Chrome, just press F12 (on Windows) or ⌥⌘I (on macOS), then select network at the top, and reload the page you're on.We'll be highlighting some well-known and a few not-so-well-known codes.
+            </p> 
+            <h4> 1XX Codes</h4>
+            <p class=""> 
+                An informational response lets the browser know that the request to load a website or document was received and understood. Codes like these are issued while the request processing continues on the server, and it lets the browser know that it should wait for a final response. 
+            </p>
+               <h5>100 — Continue</h5>
+            <p class="">A status code of 100 indicates that (usually the first) part of a request has been received without any problems, and that the     rest of the request should now be sent.
+            </p>
+            <h4> 1XX Codes</h4>
+            <p class=""> 
+                An informational response lets the browser know that the request to load a website or document was received and understood. Codes like these are issued while the request processing continues on the server, and it lets the browser know that it should wait for a final response. 
+            </p>
+               <h5>100 — Continue</h5>
+            <p class="">A status code of 100 indicates that (usually the first) part of a request has been received without any problems, and that the     rest of the request should now be sent.
+            </p>
+            <h4> 2XX Codes</h4>
+            <p class=""> 
+                A success response lets the browser know that the request was received, understood, and accepted — that's what separates them from the 1XX codes.
+            </p>
+               <h5>200 — OK</h5>
+            <p class="">This is the code that browsers receive when every has gone according to plan.
+            </p>
+               <h5>201 — Created</h5>
+            <p class="">This code indicates that a request was successful and as a result, a resource has been created (for example a new page).
+               <h5>204 — No Content</h5>
+            <p class="">The 204 status code means that the request was received and understood, but that there is no need to send any data back.
+            </p>
+
+            <h5>205 — Reset Content</h5>
+            <p class="">This code is a request from the server to the client to reset the document from which the original request was sent. For example, if a user fills out a form, and submits it, a status code of 205 means the server is asking the browser to clear the form.
+            </p>
+            <h5>206 — Partial Content</h5>
+            <p class="">This is a response to a request for part of a document. This is used by advanced caching tools, when a browser requests only a small part of a page, and just that section is returned.
+            </p>
+
+
+            <h4>3XX Codes</h4>
+            <p class=""> 
+                These status codes tell the browser that it must take additional action to complete the request. Many of these status codes are used in URL redirection.
+            </p>
+               <h5>300 — Multiple Choices</h5>
+            <p class="">The 300 status code indicates that a page or document has moved. The response will also include a list of new locations so the browser can pick a place to redirect to.
+            </p>
+               <h5>301 — Moved Permanently</h5>
+            <p class="">This tells a browser that the resource it asked for has permanently moved to a new location. The response should also include the location. It also tells the browser which URL to use the next time it wants to fetch it.
+            </p>
+            <h5>304 — Not Modified</h5>
+            <p class="">The 304 status code is sent in response to a request (for a document) that asked for the document only if it was newer than the one the client already had. Normally, when a document is cached, the date it was cached is stored. The next time the document is viewed, the client asks the server if the document has changed. If not, the client just reloads the document from the cache.
+            </p>
+            <h5>307 — Temporary Redirect</h5>
+            <p class="">307 is the status code that is sent when a document is temporarily available at a different URL, which is also returned. There is very little difference between a 302 status code and a 307 status code. 307 was created as another, less ambiguous, version of the 302 status code.
+            </p>
+
+
+            <h4>4XX Codes</h4>
+            <p class=""> 
+                This type of status code is intended for situations in which an error seems to have been caused by the browser or user, like the infamous 404 error.
+            </p>
+            <h5>400 — Bad Request</h5>
+            <p class="">A status code of 400 indicates that the server did not understand the request due to bad syntax.
+            </p>
+            <h5>401 — Unauthorized</h5>
+            <p class="">A 401 status code indicates that before a resource can be accessed, the client must be authorised by the server.
+            </p>
+            <h5>402 — Payment Required</h5>
+            <p class="">The 402 status code is not currently in use, being listed as "reserved for future use". It's interesting to think about how this will be used in the future, especially now that Chrome natively blocks some intrusive ads.
+            </p>
+            <h5>403 — Forbidden</h5>
+            <p class="">A 403 status code indicates that the client cannot access the requested resource. That might mean that the wrong username and password were sent in the request, or that the permissions on the server do not allow what was being asked.
+            </p>
+            <h5>404 — Not Found</h5>
+            <p class="">The best known of them all, the 404 status code indicates that the requested resource was not found at the URL given, and the server has no idea how long for.
+            </p>
+            <h5>408 — Request Timeout</h5>
+            <p class="">A 408 status code means that the client did not produce a request quickly enough. A server is set to only wait a certain amount of time for responses from clients, and a 408 status code indicates that time has passed.
+            </p>
+            <h5>410 — Gone</h5>
+            <p class="">A 410 status code is the 404's lesser known cousin. It indicates that a resource has permanently gone (a 404 status code gives no indication if a resource has gone permanently or temporarily), and no new address is known for it.
+            </p>
+            <h5>415 — Unsupported Media Type</h5>
+            <p class="">A 415 status code is returned by a server to indicate that part of the request was in an unsupported format.
+            </p>
+
+            <h4>5XX Codes</h4>
+            <p class=""> 
+                Simply put, these codes are sent when the server failed to fulfil a request.
+            </p>
+            <h5>500 - Internal Server Error</h5>
+            <p class="">A 500 status code (which developers see more often that they want) indicates that the server encountered something it didn't expect and was unable to complete the request.
+            </p>
+            <h5>503 — Service Unavailable</h5>
+            <p class="">A 503 status code is most often seen on extremely busy servers, and it indicates that the server was unable to complete the request due to a server overload.
+            </p>
+            <h4>503 Isn't So Bad</h4>
+            <p>
+                If you ever see one of these errors on your own website, and you don't know what to do, take a look at this list. With this, you'll be able to  know what's actually going on when your website looks like it's broken. <br>If it's a 503, maybe you're going viral!
+            </p>
+
+        <p class=""> 
+            Understanding these error codes can help users and developers alike troubleshoot issues and navigate the web more effectively. They serve as communication tools between your browser and the web server, revealing valuable information about the status of your requests. Familiarizing yourself with these status codes can make your online experience smoother and error-free.
         </p>
-        <a class="link-primary" href="blogs.html">Read more</a> 
+           
+       
+        <!-- <a class="link-primary" href="blogs.html">Read more</a>  -->
     </div>
-    </section>
+   
 
        
     <!-- footer -->

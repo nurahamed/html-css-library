@@ -1,92 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-
-
-:root{
-    --primary-color: #10A19F ;
-    --dark-gray: #E9E8E8;
-    --button-color: #3f3d56;
-    --purple-color: #7c3aed;
-    --red-love: #F50057;
-    --section:#CBE4DE ; 
-     /* #93BFCF ; */
-    
+:root {
+  --primary-color: #498dbe;
+  --dark-gray: #e9e8e8;
+  --button-color: #3f3d56;
+  --purple-color: #7c3aed;
+  --red-love: #f50057;
+  --section: #cbe4de;
+  /* #93BFCF ; */
 }
 
 /* #BCEAD5 */
-body{
-    font-family: 'Montserrat', sans-serif;
-    text-decoration-color: #3f3d56;
-    margin: 0px;
+body {
+  font-family: "Montserrat", sans-serif;
+  text-decoration-color: #3f3d56;
+  margin: 0px;
+}
+.blog {
+  display: block;
+  margin: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.container{
-    padding-left: 1rem;
-    padding-right: 2rem;
-    
+.container {
+  padding-left: 1rem;
+  padding-right: 2rem;
 }
-.container-center{
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-    
+.container-center {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
 }
 
-.container-fluid{
-    margin: auto;
-    max-width: auto;
-
+.container-fluid {
+  margin: auto;
+  max-width: auto;
 }
 /* footer */
 
-hr{
-    margin: 5rem;
+hr {
+  margin: 5rem;
 }
 
-hr{
-    margin: 40px 0px;;
-    margin-left: 46%;
-    border-style: none;
-    border-top-style: dotted;
-    border-color: var(--primary-color);
-    border-width: 5px;
-    width: 8%;
-    }
-    
-.my-name{
-    margin: 50px 0px 0px 0px ;
-    font-family: 'Sacramento', cursive;
-    font-family: "Sacramento";
-    font-size: 3rem;
-    text-align: center;
-    color: var(--button-color);
-    
-    
+hr {
+  margin: 40px 0px;
+  margin-left: 46%;
+  border-style: none;
+  border-top-style: dotted;
+  border-color: var(--primary-color);
+  border-width: 5px;
+  width: 8%;
 }
 
-.h1-project{
-    margin: 4rem 1rem;
-    color: var(--primary-color);
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
+.my-name {
+  margin: 50px 0px 0px 0px;
+  font-family: "Sacramento", cursive;
+  font-family: "Sacramento";
+  font-size: 3rem;
+  text-align: center;
+  color: var(--button-color);
 }
 
-.hero .hero-img{
-    max-width: 400px;
-    display: block;
-    margin: auto;
-    margin-top: 3.5rem;
-    margin-bottom: 0.5rem; ;
+.h1-project {
+  margin: 4rem 1rem;
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
 
+.hero .hero-img {
+  max-width: 400px;
+  display: block;
+  margin: auto;
+  margin-top: 3.5rem;
+  margin-bottom: 0.5rem;
 }
 /* .hero-heading{
 color: var(--button-color);
@@ -96,231 +93,221 @@ margin-top: 0rem;
 } */
 
 /* .hero .hero-heading  */
-.heading-inverted{
-    color: var(--primary-color);
-    padding-top: 0rem;
-    margin-top: 0rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-align: center;
+.heading-inverted {
+  color: var(--primary-color);
+  padding-top: 0rem;
+  margin-top: 0rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
 }
-.heading-inverted:hover{
-    color: var(--button-color);
+.heading-inverted:hover {
+  color: var(--button-color);
 }
-.hero-work{
-    padding: 0px;
+.hero-work {
+  padding: 0px;
 }
 
 /* links */
-.link{
-    text-decoration: none;
-    /* color: white; */
-    padding: 0.5rem 1rem;
+.link {
+  text-decoration: none;
+  /* color: white; */
+  padding: 0.5rem 1rem;
 }
 
- 
- 
-.link-primary{
-text-decoration: none;
-padding: 0.5rem 1rem;
-background-color: var(--primary-color);
- border-radius: 1rem;
- color: whitesmoke;
- margin: 0.5rem 0rem;
- display: inline-block;
+.link-primary {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  color: whitesmoke;
+  margin: 0.5rem 0rem;
+  display: inline-block;
 }
 .link-primary:hover {
-    background-color: var(--button-color);
-    -ms-text-justify: auto;
+  background-color: var(--button-color);
+  -ms-text-justify: auto;
 }
 
-.link-secondery{
- text-decoration: none;
- padding: 0.5rem 1rem;
- color: black;
- border-radius: 1rem;
- border: 1px solid var(--primary-color);
- display: inline-block;
- margin-top: 20px;
+.link-secondery {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: black;
+  border-radius: 1rem;
+  border: 1px solid var(--primary-color);
+  display: inline-block;
+  margin-top: 20px;
 }
 .link-secondery:hover {
-    background-color: var(--button-color);
-    color: white;
-    display: inline-block;
+  background-color: var(--button-color);
+  color: white;
+  display: inline-block;
 }
 
-
-.list-non-bullet{
-    list-style: none;
-
+.list-non-bullet {
+  list-style: none;
 }
-.list-item-inline{
- display: inline;
- padding: 0rem 0.5rem;
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
 }
-
-
 
 /* navigation */
 
-
-
-.navigation{
-     background-color: var(--primary-color);
-     color: white;
-     padding: 0.1rem;
-     border-bottom-left-radius: 1rem;
+.topBar {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.1rem;
+  border-bottom-left-radius: 1rem;
 
 }
-.navigation .nav-brand{
-    font-weight: bold;
-    padding-left: 1rem;
-    padding-top: 0.6rem;
-    /* font-size: 1.1rem ; */
+#fixed-top{
+    top: 0;
+    position: fixed;
+    position: sticky !important;
 }
-.navigation .nav-pills{
-    text-align: right;
+.topBar .nav-brand {
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-top: 0.6rem;
+  /* font-size: 1.1rem ; */
 }
-.navigation .link{
-    color: white;
-    
+.topBar .nav-pills {
+  text-align: right;
 }
-.navigation .link:hover {
-    color: var(--button-color);
+.topBar .link {
+  color: white;
 }
-
-.naviagation .link-active{
-    font-weight: bold;
-
-}
-
-.section{
-    border-radius:1rem ;
-    margin: 0px 3rem;
-    padding: 3rem;
-    background-color: var(--section);
+.topBar .link:hover {
+  color: var(--button-color);
 }
 
-.section-one{
-    background-color: var(--dark-gray);
-    border-radius: 1rem;
+.topBar .link-active {
+  font-weight: bold;
 }
 
-.section-project{
-    margin-top: 2rem;
+.section {
+  border-radius: 1rem;
+  margin: 0px 3rem;
+  padding: 3rem;
+  background-color: var(--section);
 }
 
-.footer{
-    background-color: var(--primary-color);
-    text-align: center;
-    font-size: 1.5rem;
-    border-top-right-radius: 1rem;
-    color: white;
-    margin-top: 6rem;
-    padding: 1rem 0rem;
-
-}
-.footer-header{
-    font-weight: bold;
-    font-size: large;
-}
-.footer-links{
-    padding: 0px;
-    margin-bottom: 0rem;
-    color: white;
+.section-one {
+  background-color: var(--dark-gray);
+  border-radius: 1rem;
 }
 
-.footer-links:hover{
-    color: var(--button-color);
+.section-project {
+  margin-top: 2rem;
 }
 
-.footer-icon{
-    margin: 0px;
-    padding: 0px;
-    width: 25px;
-    height: 25px;
-    border-radius: 50% ;
+.footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  font-size: 1.5rem;
+  border-top-right-radius: 1rem;
+  color: white;
+  margin-top: 6rem;
+  padding: 1rem 0rem;
+}
+.footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+.footer-links {
+  padding: 0px;
+  margin-bottom: 0rem;
+  color: white;
 }
 
-
-.social-media-space{
-    margin-left: 2rem;
-    padding: 0px 0px;
+.footer-links:hover {
+  color: var(--button-color);
 }
 
+.footer-icon {
+  margin: 0px;
+  padding: 0px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.social-media-space {
+  margin-left: 2rem;
+  padding: 0px 0px;
+}
 
 /* bmi calculator */
-.bmi-hero{
-    color: var(--purple-color);
-    margin-top: 3rem;
-    margin-bottom: 0px;
+.bmi-hero {
+  color: var(--purple-color);
+  margin-top: 3rem;
+  margin-bottom: 0px;
 }
 
-.text{
-    padding: 0px;
-    margin-bottom: 1px;
+.text {
+  padding: 0px;
+  margin-bottom: 1px;
 }
-#btn{
-    font-size: inherit;
-    font-size: large;
-    margin-top: 10px;
-    border: none;
-    color: var(--button-color);
-    background-color: var(--purple-color);
-    padding: 10px;
-    outline: none;
-    cursor: pointer;
-    border-radius: 4px;
-
+#btn {
+  font-size: inherit;
+  font-size: large;
+  margin-top: 10px;
+  border: none;
+  color: var(--button-color);
+  background-color: var(--purple-color);
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
-#btn:hover{
-color: white;
-background-color: var(--button-color);
-box-shadow: 1px 1px 10px #341f97;
+#btn:hover {
+  color: white;
+  background-color: var(--button-color);
+  box-shadow: 1px 1px 10px #341f97;
 }
-.info-color{
-    color: var(--purple-color);
+.info-color {
+  color: var(--purple-color);
 }
-.bold{
-    font-weight: bold;
+.bold {
+  font-weight: bold;
 }
 /* bmi calculator */
 
 /* love Calculator */
 
-.love-hero{
-    color: var(--red-love);
-    text-decoration: wavy;
-    margin-top: 4rem;
+.love-hero {
+  color: var(--red-love);
+  text-decoration: wavy;
+  margin-top: 4rem;
 }
 
-.love-text{
-    padding: 0px;
-    margin-bottom: 1px;
-    color: var(--red-love);
+.love-text {
+  padding: 0px;
+  margin-bottom: 1px;
+  color: var(--red-love);
 }
-#love-btn{
-    font-size: inherit;
-    font-size: large;
-    margin-top: 10px;
-    border: none;
-    color: var(--button-color);
-    background-color: var(--red-love);
-    padding: 10px;
-    outline: none;
-    cursor: pointer;
-    border-radius: 4px;
-
+#love-btn {
+  font-size: inherit;
+  font-size: large;
+  margin-top: 10px;
+  border: none;
+  color: var(--button-color);
+  background-color: var(--red-love);
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
-#love-btn:hover{
-color: white;
-background-color: var(--button-color);
-box-shadow: 1px 1px 10px #341f97;
+#love-btn:hover {
+  color: white;
+  background-color: var(--button-color);
+  box-shadow: 1px 1px 10px #341f97;
 }
-.love-text{
-    text-align: center;
+.love-text {
+  text-align: center;
 }
-.love-box{
-    padding: 1.5rem 1rem;
+.love-box {
+  padding: 1.5rem 1rem;
 }
 /* love Calculator */
