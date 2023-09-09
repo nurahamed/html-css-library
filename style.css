@@ -358,5 +358,12 @@ h1-project.love-text {
         background-color: var(--dark-gray);
         border-radius: 1rem;
       }
-    
+      .hero .hero-img {
+        max-width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 3.5rem;
+        margin-bottom: 0.5rem;
+      }
+      
   }
